@@ -1,5 +1,4 @@
-// syntax: type name = value 
-
+// syntax: type name = value
 int age = 27;
 string name = "Krzysztof";
 double temperature = 36.6;
