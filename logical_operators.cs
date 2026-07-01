@@ -16,6 +16,6 @@ Console.WriteLine(problem);
 bool free = !blocked; // true
 Console.WriteLine(free);
 
-// ternary operator: condition ? value_if_true: value_if_false
+// ternary operator: condition "?" value_if_true: value_if_false
 string status = of_age ? "adult" : "minor";
 Console.WriteLine(status);
