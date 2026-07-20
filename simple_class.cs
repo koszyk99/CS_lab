@@ -1,16 +1,14 @@
 using System;
 
-public class Dog
-{
-    public string Name;
-    public string Breed;
-    public int Age;
-}
-
 // create object key word "new"
-Dog rex = new Dog();
-rex.Name = "Rex";
-rex.Breed = "Shepherd";
-rex.Age = 3;
+Dog rex = new Dog { Name = "Rex", Breed = "Shepherd", Age = 3 };
 
 Console.WriteLine(rex.Name); // Rex
+
+// definie class
+public class Dog
+{
+    public required string Name { get; set; }
+    public required string Breed { get; set; }
+    public required int Age { get; set; }
+}
