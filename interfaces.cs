@@ -12,7 +12,13 @@ Play(new Guitar());
 Play(new Trumpet());
 
 // list of instruments - different types, one common interface
-List<ISound> orchestra = new() 
+List<ISound> orchestra = new()
+{
+    new Guitar(), new Trumpet(), new Guitar()
+};
+
+foreach (var o in orchestra)
+    o.MakeSound();
 
 // define interface - always starts with I (convention)
 public interface ISound
